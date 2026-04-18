@@ -4,4 +4,4 @@ phases:
   build:
     commands:
       - aws s3 sync . s3://csce412khannaanay-me-prod --delete --exclude ".git/*" --exclude "buildspec.yml"
-      - aws cloudfront create-invalidation --distribution-id E16TUSW7M8F2LW --paths "/*"
+      - aws cloudfront create-invalidation --distribution-id E27M967J5E6KBH --paths "/*"
